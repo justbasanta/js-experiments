@@ -1,19 +1,28 @@
 function animate(){
-	for(var i=0; i<1;i++){
-		var a = ''
-		for(var j=0;j<=i;j++){
-			a = a + '*';
+	var max = 5;
+	var count = 0;
+	var star = '';
+	var flag = true;
+	setInterval(function(){				
+		if (flag == true) {
+			star+= '*';
+			console.log(star);
+			if (star.length >= max) {
+				flag = false;
+			}
 		}
-		doSetTimeout(a)
-	}
+		if (flag == false) {
+			star = star.slice(0,-1);
+			console.log(star);
+			if (star.length == 0) {
+				flag = true;
+			};
+		}
+	},700)
 }
+animate();
 
-function doSetTimeout(index){
-		setInterval(function(index){
-		console.log(index);
-		}(index),100);
-}
-animate()
+
 
 // function doSetTimeout(i) {
 //   setTimeout(function() { alert(i); }, 100);
