@@ -1,0 +1,49 @@
+.slider-holder
+        {
+            width: 800px;
+            height: 800px;
+            background-color: yellow;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            text-align: center;
+            overflow: hidden;
+        }
+        img{
+            height: 400px;
+            width: 800px;
+        }
+        
+        .image-holder
+        {
+            width: 2400px;
+            background-color: red;
+            height: 400px;
+            clear: both;
+            position: relative;
+        }
+        
+        .slider-image
+        {
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        
+        }
+        
+        
+        
+        #button-holder
+        {
+            position: relative;
+            top: -20px;
+        }
+        
+        #slider-change
+        {
+            display: inline-block;
+            width: 100px;
+            border-radius: 5px;
+            background-color: green;
+        }
