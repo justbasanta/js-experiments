@@ -11,14 +11,15 @@ function animate(){
 				flag = false;
 			}
 		}
+
 		if (flag == false) {
 			star = star.slice(0,-1);
-			console.log(star);
-			if (star.length == 0) {
+			console.log(star); 
+			if (star.length == 1) {
 				flag = true;
-			};
+			}
 		}
-	},700)
+	},2000)
 }
 animate();
 
