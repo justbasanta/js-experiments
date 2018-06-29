@@ -1,0 +1,22 @@
+.box{
+	width: 500px;
+	height: 500px;
+	background-color: black;
+	position: relative;
+	float: left;
+}
+
+.ball{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: red;
+	position: absolute;
+}
+.blue-ball{
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	background-color: blue;
+	position: absolute;
+}
