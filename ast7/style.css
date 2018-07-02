@@ -1,0 +1,9 @@
+.container{
+	position: relative;
+	background-color: green;
+	margin-bottom: 20px;
+}
+.box{
+	position: absolute;
+	border-radius: 100%;
+}
