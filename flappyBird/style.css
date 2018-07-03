@@ -1,0 +1,27 @@
+.main-wrapper{
+	position: relative;
+	height: 600px;
+	width: 700px;
+}
+
+.background{
+	width: 700px;
+	height: 400px;
+	background-image: url('./images/background.png');
+	background-repeat: repeat-x;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	/*transition: all 0.2s ease-in;*/
+}
+
+.bird{
+	height: 60px;
+	width: 60px;
+	background-image: url('./images/bird.png');
+	position: absolute;
+}
+.pipe{
+	background-color: white;
+	position: absolute;
+}
