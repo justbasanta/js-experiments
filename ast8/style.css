@@ -1,0 +1,93 @@
+.main-wrapper{
+	height: 600px;
+	width: 400px;
+	position: relative;
+	margin: 0 auto;
+}
+.homescreen-wrapper{
+	position: absolute;
+	background-image: url('./images/homescreen-background.jpg');
+	height: 600px;
+	width: 400px;
+	/*z-index: 20;*/
+	display: block;
+}
+#fly-button{
+	position: absolute;
+	background-image: url("./images/homescreen-start.png");
+	width: 130px;
+	height: 65px;
+	left: 35%;
+	bottom: 90px;
+	z-index: 15;
+}
+#background{
+	position: absolute;
+	height: 600px;
+	width: 400px;
+	background-image: url("./images/clouds.jpg");
+	background-repeat: repeat-y;
+	overflow: hidden;
+	display: none;
+}
+.car{
+	position:absolute;
+	width:100px;
+	height:100px;
+	background:url('../images/batmobile.png') no-repeat;
+	top: 500px;
+}
+
+.enemy{
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background-image: url('./images/enemycar.png');
+}
+.bullet{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background:yellow;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+.explosion{
+position:absolute;
+width:100px;
+height:100px;
+background-image:url('./images/explode.png');
+}
+.score-board{
+position:absolute;
+z-index:5;
+width:100px;
+line-height:20px;
+text-align:center;
+background:#231f20;
+color:white;
+top:10px;
+left:10px;
+border-radius:5px;
+}
+
+.end-screen{
+position:absolute;
+padding-top:100px;
+z-index:10;
+width:400px;
+height:500px;
+background-image:url('./images/gameoverbackground.png');
+display:none;
+font-size:25px;
+color:white;
+text-align :center;
+line-height:50px;
+}
+
+.end-screen span{
+width:auto;
+font-size:36px;
+text-align :center;
+color:red;
+}
