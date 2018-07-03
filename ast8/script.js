@@ -19,7 +19,7 @@ var $button = document.getElementById('fly-button');
 var frame = new Frame();
 
 $button.onclick = function() {
-    console.log('clicked');
+    // console.log('clicked');
     $homescreen.style.display = 'block';
     $background.style.display = 'block';
 
@@ -28,7 +28,7 @@ $button.onclick = function() {
 }
 
 function main() {
-    console.log('main started');
+    // console.log('main started');
     resetGame();
     car.resetCarPosition();
     gamestatus = true;
@@ -134,7 +134,7 @@ function Enemy() {
 }
 
 function createEnemies() {
-    console.log("IN CREATE ENEMIES");
+    // console.log("IN CREATE ENEMIES");
     if (counter > 80 - (speed_dy * 3)) {
         var e = new Enemy();
         (enemies_car).push(e);
@@ -144,8 +144,8 @@ function createEnemies() {
 }
 
 function updateEnemies() {
-    console.log("IN UPDATE ENEMIES");
-    console.log(enemies_car);
+    // console.log("IN UPDATE ENEMIES");
+    // console.log(enemies_car);
     for (var i = 0; i < enemies_car.length; i++) {
         if (enemies_car[i] !== null) {
             enemies_car[i].updateEnemy();
@@ -188,7 +188,7 @@ function Bullet() {
 }
 
 function updateBullets() {
-    console.log("IN UPDATE BULLETS");
+    // console.log("IN UPDATE BULLETS");
     for (var i = 0; i < bullets.length; i++) {
         if (bullets[i] !== null) {
             bullets[i].updateBullet();
@@ -261,8 +261,8 @@ function collisionCheck() {
                 explodeAnim(carX, carY);
                 // alert('Game Over!!!!');
 
-                var gameovermsg = document.getElementById("gameovermsg");
-                gameovermsg.innerHTML = "Game Over";
+                var feedbackgameover = document.getElementById("gameovermsg");
+                feedbackgameover.innerHTML = "Game Over";
                 gameOver();
                 // gamestatus = false;
             }
@@ -378,7 +378,7 @@ function clearArray(input) {
 
 function keydownEventHandler(e) {
     // var homescreen = document.getElementById("homescreen-wrapper");
-    console.log(e.keyCode);
+    // console.log(e.keyCode);
     if (gamestatus) {
         if (e.keyCode == 37) {
             //left
@@ -403,7 +403,7 @@ function keydownEventHandler(e) {
         }
 
         if (e.keyCode == 27) {
-            console.log("ESC PRESSED!!!");
+            // console.log("ESC PRESSED!!!");
             resetGame();
             $homescreen.style.display = "block";
             $background.style.display = "none";
