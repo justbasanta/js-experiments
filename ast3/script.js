@@ -1,18 +1,21 @@
 
 var button = document.getElementById('button-holder');
 var index = 0;
-var minMargin = '-1600px';
-var maxMargin = '0px';
-button.onclick = function(){
-    setInterval(function(){
-        var image = document.getElementsByClassName('image-holder')[0];
-        index++;
-        if (index > 0 && index < 3){
-            image.style.marginLeft = -index + 'px';
-        }
-        if (image.style.marginLeft === 'minMargin') {
-            index = 0;
-        };
-        image.style.marginLeft = '-100' * index + 'px'; 
-        },200)
-}
+var minMargin = -1600;
+var maxMargin = 0;
+var image = document.getElementsByClassName('slider-image');
+// var marginOfImage = image.style.marginLeft;
+// console.log(image.length);
+// console.log(typeof(image));
+image[0].style.marginLeft = 0 + 'px';
+console.log(image[0].style.marginLeft)
+
+// console.log(image[2]);
+
+// for(var i=0; i<image.length;i++){
+//     console.log(image[i]);
+// }
+// console.log(image);
+// image.forEach(slide);
+
+// function slide()
