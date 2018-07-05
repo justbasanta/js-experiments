@@ -49,3 +49,15 @@
 	text-align: center;
 	display: none;
 }
+.playagain{
+	position: absolute;
+	top: 250px;
+	left: 150px;
+	border: 1px solid black;
+	border-radius: 7px;
+	box-shadow: -3px 3px 7px #888;
+	color: white;
+	padding: 7px;
+	background-color: #e67e22;
+	display: none;
+}

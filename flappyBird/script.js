@@ -3,6 +3,7 @@ let $background = document.getElementById('background');
 let $bird = document.getElementById('bird');
 let $score = document.getElementById('scoreboard');
 let $gameover = document.getElementById('gameover');
+let $playagain = document.getElementById('playagain');
 let speed = 1;
 let game_status = true;
 let gravity = 1;
@@ -68,6 +69,7 @@ class Bird{
 			console.log('collision vayo');
 			this.deleteBird();
 			$gameover.style.display = 'block';
+			$playagain.style.display = 'block';
 		} 
 	}
 
@@ -184,6 +186,7 @@ class Pipe{
 		 		console.log(">>>>COLLISION <<<<<<");
 		 		birdObj.deleteBird();   
 		 		$gameover.style.display = 'block';
+		 		$playagain.style.display = 'block';
 		 	}
 		 	if(pipes[i].removePipe()){
 		 		pipes.splice(i,1);
@@ -195,6 +198,9 @@ class Pipe{
 
 		}
 		requestAnimationFrame(mainLoop);
+	}
+	$playagain.onclick = function (){
+		document.location.reload();
 	}
 
 	mainLoop();
