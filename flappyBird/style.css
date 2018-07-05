@@ -5,12 +5,12 @@
 }
 
 .background{
-	width: 700px;
-	height: 400px;
+	width: 400px;
+	height: 500px;
 	background-image: url('./images/background.png');
 	background-repeat: repeat-x;
 	position: relative;
-	margin: 0 auto;
+	margin: 0;
 	overflow: hidden;
 	/*transition: all 0.2s ease-in;*/
 }
@@ -24,4 +24,28 @@
 .pipe{
 	background-color: white;
 	position: absolute;
+}
+
+.score{
+	position: absolute;
+	top: 7px;
+	left: 20px;
+	background-color: #333;
+	color: white;
+	font-size: 18px;
+	padding: 2px;
+	border-radius: 4px;
+	z-index: 10;
+}
+
+.gameover{
+	position: absolute;
+	top: 180px;
+	left: 30px;
+	background: transparent;
+	font-size: 40px;
+	color: white;
+	font-weight: bolder;
+	text-align: center;
+	display: none;
 }
