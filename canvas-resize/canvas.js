@@ -50,9 +50,9 @@ function Circle(x, y, dx, dy, radius){
 
 	this.draw = function(){
 		c.beginPath();
-			c.arc(this.x , this.y , this.radius, 0, Math.PI * 2, false); //c.arc(x: Int, y: Int, r: Int, startAngle: float, endAngle: Float, drawCounterClockwise: Bool (false));
-			c.fillStyle = 'rgba(' + this.r + ',' + this.g + ',' + this.b + ',' + this.alpha +')';
-			c.fill();
+		c.arc(this.x , this.y , this.radius, 0, Math.PI * 2, false); //c.arc(x: Int, y: Int, r: Int, startAngle: float, endAngle: Float, drawCounterClockwise: Bool (false));
+		c.fillStyle = 'rgba(' + this.r + ',' + this.g + ',' + this.b + ',' + this.alpha +')';
+		c.fill();
 	}
 	this.update = function(){
 
@@ -73,8 +73,8 @@ var circleArray = [];
 for(var i = 0; i< 100; i++){
 	var x = Math.random() * (innerWidth - radius * 2) + radius; //to resolve issue in right hand side and adding radius to resolve in LHS
 	var y = Math.random() * (innerHeight - radius * 2) + radius;
-	var dx = (Math.random() - 0.5) * 5;
-	var dy = (Math.random() - 0.5) * 5;
+	var dx = (Math.random() - 0.5) * 7;
+	var dy = (Math.random() - 0.5) * 7;
 	var radius = 30;
 	circleArray.push(new Circle(x, y, dx, dy, radius));
 }
