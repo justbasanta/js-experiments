@@ -35,6 +35,16 @@ var c = canvas.getContext('2d'); //this is for context
 // 	c.stroke();
 // }
 
+var mouse = {
+	x: undefined,
+	y: undefined
+}
+
+window.addEventListener('mousemove', function(event){
+	mouse.x = event.x;
+	mouse.y = event.y;
+	console.log(mouse);
+})
 
 function Circle(x, y, dx, dy, radius){
 	this.x = x;
@@ -55,7 +65,6 @@ function Circle(x, y, dx, dy, radius){
 		c.fill();
 	}
 	this.update = function(){
-
 			if(this.x + this.radius > innerWidth || this.x - this.radius < 0 ){
 				this.dx = -this.dx;
 			}
@@ -64,6 +73,10 @@ function Circle(x, y, dx, dy, radius){
 			}
 			this.x += this.dx;
 			this.y += this.dy;
+
+			//interactivity
+			mouse.x - this.x < 50
+
 			this.draw();
 	}
 }
@@ -78,7 +91,7 @@ for(var i = 0; i< 100; i++){
 	var radius = 30;
 	circleArray.push(new Circle(x, y, dx, dy, radius));
 }
-console.log(circleArray);
+// console.log(circleArray);
 
 	function animate(){
 		requestAnimationFrame(animate);
